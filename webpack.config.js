@@ -5,5 +5,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack demo'
     })
-  ]
+  ],
+  devServer: {
+    open: true // Open the page in browser
+  }
 }
