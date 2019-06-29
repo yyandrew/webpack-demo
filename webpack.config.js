@@ -9,12 +9,18 @@ const commonConfig = merge([
         title: 'Webpack demo'
       })
     ]
-  },
-  parts.loadCSS(),
+  }
 ])
-const productionConfig = merge([])
+
+const productionConfig = merge([
+  parts.extractCSS({
+    use: 'css-loader'
+  })
+])
+
 const developmentConfig = merge([
-  parts.devServer()
+  parts.devServer(),
+  parts.loadCSS(),
 ])
 
 module.exports = mode => {
