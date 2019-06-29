@@ -1,6 +1,8 @@
 body {
   background: cornsilk;
-  color: red;
+  background-image: url('./logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .pure-button {
