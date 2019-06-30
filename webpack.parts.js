@@ -76,3 +76,6 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
     ]
   }
 })
+exports.generateSourceMaps = ({ type }) => ({
+  devtool: type,
+})
