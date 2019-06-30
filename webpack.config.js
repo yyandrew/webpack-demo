@@ -34,6 +34,7 @@ const productionConfig = merge([
   }),
   parts.generateSourceMaps({ type: 'source-map' }),
   parts.clean(),
+  parts.attachRevision(),
   {
     optimization: {
       splitChunks: {
