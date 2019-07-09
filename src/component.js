@@ -6,6 +6,7 @@ export default (text = 'Hello World') => {
 
   element.innerHTML = `first: ${first}, second: ${second}`
   element.onclick = () =>
+    console.log(abc)
     import('./lazy')
       .then(lazy => {
         element.textContent = lazy.default

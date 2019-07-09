@@ -92,3 +92,6 @@ exports.attachRevision = () => ({
     })
   ]
 })
+exports.enableSourceMap = () => ({
+  devtool: 'source-map',
+})

@@ -12,7 +12,8 @@ const commonConfig = merge([
   {
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'Webpack demo'
+        title: 'Webpack demo',
+        template: './src/index.html'
       })
     ]
   },
@@ -54,6 +55,7 @@ const productionConfig = merge([
 ])
 
 const developmentConfig = merge([
+  parts.enableSourceMap(),
   parts.devServer(),
   parts.loadCSS(),
   parts.loadImages(),
